@@ -55,6 +55,14 @@ public class Room : MonoBehaviour
 
     }
 
- 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            CameraController.instance.ChangeTarget(transform);
+        }
+    }
+
+
 
 }

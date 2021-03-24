@@ -48,8 +48,8 @@ public class RoomGenerator : MonoBehaviour
     }
     private void Update()
     {
-        //按下任意按键 
-        if (Input.anyKeyDown)
+        //按下P按键 
+        if (Input.GetKeyDown(KeyCode.P)) 
         {
             //重新加载场景           //参数：当前场景名
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
